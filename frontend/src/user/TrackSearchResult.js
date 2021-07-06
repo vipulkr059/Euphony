@@ -1,10 +1,9 @@
 import React from "react";
 
-function handlePlay(params) {
-  //
-}
-
-const TrackSearchResult = ({ track }) => {
+const TrackSearchResult = ({ track, chooseTrack }) => {
+  const handlePlay = () => {
+    chooseTrack(track);
+  };
   return (
     <div
       className="d-flex m-2 align-items-center"
